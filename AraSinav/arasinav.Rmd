@@ -1,0 +1,58 @@
+---
+title: "İKTİSADİ BÜYÜMEYE ETKİ EDEN FAKTÖRLER VE EKONOMETRİK BİR UYGULAMA"
+author: 
+  - Abdurrahim İNAL[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 20080281, [Github Repo](https://github.com/inal7206/20080281)
+
+
+# Giriş
+Ekonomik büyüme, bir ulusun gelişmişlik seviyesini gösteren en önemli unsurdur.Ekonomik büyümeyi açıklamak bazı değişkenlerle olur.Bu değişkenler de ekonometrik analiz ile olur.
+İktisat teorisi ve iktisadi olayların analiz edilerek sayısal sonuçların elde edilmesi ekonometri ile mümkündür.Ekonometride iktisadi sorun önce teorik olarak incelenir,sonra ilgili değişkenler arasındaki ilişki ya da ilişkiler matematiksel bir model halinde formüle edilir (@yalta2011ekonometri).
+Çalışmada büyüme değişkeni bağımlı değişken olarak ele alınmıştır.Büyümeyi etkileyen bağımsız değişkenler olarak faiz, para arzı, döviz kuru ve enflasyon ele alınmıştır.Bu çalışmayı açıklama için Klasik Teori, Keynesyen Teori ve Monetarist Teori de kullanılmıştır.
+Klasik Teori'ye göre para arzındaki ($M$) artış reel ekonomiyi etkilemezken fiyatlar genel düzeyini ($\pi$) arttırır.Bu yaklaşıma göre uzun dönemde Gayri Safi Milli Hasıla ve dolaşım hızı sabittir; para arzı arttığında sadece fiyatlar genel düzeyi aynı yönde ve oranda değişir (@oktar2011turkiye).
+Keynesyen Teori'ye göre, para arzındaki artış faiz oranlarının ($R$) düşmesine neden olur.Faiz oranlarındaki bu düşüş ise (yatırımların faiz esnekliği sıfır değilse) yatırımların artmasına neden olur. Yatırımların artması da toplam harcamaları ve Gayri Safi Milli Hasılayı arttırır (kısa dönem için).
+Monetarist Yaklaşım'a göre ise para arzındaki artış kısa dönemde Gayri Safi Milli Hasıla'yı arttırır, uzun dönemde ise sadece fiyatlar genel seviyesini arttırır (@cengiz2008keynesyen).
+
+
+## Çalışmanın Amacı
+Faiz, para arzı, döviz kuru ve enflasyondaki değişmelerin ekonomik büyümeye etkisinin 2009-2021 yılları arasındaki veriler ele alınarak ekonometrik bir analiz hedeflenmektedir.Bu analizi gerçekleştirmek için klasik teori, keynesyen teori ve monetarist teoriden de faydalanılmıştır.
+Ekonomik büyüme, bir ulusun gelişmişlik seviyesini gösteren etkenlerden biridir.Bu çalışmada ülkemizin 2009-2021 yılları arasındaki verilerine bakarak ekonomik büyümeyi ve ülkenin gelişmişliğini açıklamaya çalışacağız. 
+
+
+## Literatür 
+Ekonomik büyüme ve ekonomik büyümeyi etkileyen faktörler ile ilgili çalışmalar incelenmiştir. Çalışmalarda ekonomik büyüme bağımlı değişken olarak alınırken, enflasyon oranı, faiz oranı, döviz kuru, parasal büyüme, sermaye stoku gibi değişkenler bağımsız değişken olarak ele alınmıştır. Çalışmaların ikisi Türkiye verilerini ele alırken, bir çalışma Nijerya verilerini ele almıştır. Çalışmalarda zaman serisi analizinin yanı sıra, Granger nedensellik ve VAR modeli kullanılarak analizler gerçekleştirilmiştir. Uçak, S., ve Şahan, B. (2019) çalışmalarında enflasyon hedeflerine ulaşılması için Merkez bankasının elindeki para politikası araçlarının kullanıldığını belirtmişlerdir.  Yaptıkları çalışmada, benim de çalışmamda aldığım Türkiye ekonomisinde faiz oranlarındaki değişimlerin enflasyon, döviz kuru ve büyüme oranlarına etkisini ortaya koymak için 2006:01-2017:12 dönemi için; birim kök testi, eş bütünleşme testi, vektör hata düzeltme modeli, Granger nedensellik testi sonuçları ve VAR modeli denklem analizini kullanmışlardır (@sefer2019faiz).  VAR modeli denklem sonucuna göre; faiz oranlarında %1’lik bir artış döviz kurlarında %0.32’lik, enflasyonda %0.49’luk ve ekonomik büyümede %0.27’lik azalmaya neden olduğu sonucuna varmışlardır. Sağdıç, A. (2018) ise yaptığı çalışmada Türkiye'deki döviz Kuru, enflasyon ve büyüme ilişkisi zaman serileri analiziyle 2003Q1-2017Q3 dönemi üçer aylık veriler kullanılarak araştırmıştır.  Granger nedensellik analizinden elde bulgulara göre, reel efektif döviz kurundan enflasyona doğru tek yönlü nedensellik ilişkisinin olduğu, reel efektif döviz kuru ile büyümeye arasında herhangi bir nedensellik ilişkisinin olmadığı tespit edilmiştir(@saugdicc2018turkiye). Yabancı makalelerden yaptığım araştırmada Orphanides, A., ve Solow, R. M. (1990) çalışmalarında parasal büyümenin, istikrarlı durumda daha yüksek sermaye stoku ve kişi başına çıktı ile ilişkili olduğu sonucuna varmıştır. Yüksek enflasyonun, tasarruf sahiplerinin portföylerini reel sermaye lehine değiştirmesine neden olduğunu belirtmişlerdir(@orphanides1990money). Bir diğer makalede ise Gatawa, N. M., vd. (2017) çalışmalarında 1973-2013 zaman serisi verilerini kullanarak para arzı, enflasyon ve faiz oranının Nijerya'daki Ekonomik Büyüme üzerindeki etkisini ampirik olarak incelemişlerdir. Enflasyon dışında, geniş para arzı ve faiz oranının ekonomik büyümeyle negatif ilişkili olduğu ortaya koyulmuştur(@gatawa2017impact). 
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+
